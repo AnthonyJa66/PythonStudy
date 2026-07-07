@@ -1,0 +1,119 @@
+{
+  "code": 200,
+  "msg": "success",
+  "data": {
+    "daGuanYuan": {
+      "id": 1970580,
+      "ph": 6.68,
+      "cod": 50.60,
+      "tp": 0.39,
+      "nh3n": 3.56,
+      "beng1Yx": 1,
+      "beng2Yx": 0,
+      "beng1Gz": 0,
+      "beng2Gz": 0,
+      "ccYx": 1,
+      "ccGz": 0,
+      "ssll": 44.62,
+      "ljll": 308362.00,
+      "qyw": 2.18,
+      "hyw": 2.18,
+      "inserttime": "2026-07-02 13:10:00"
+    },
+    "chenXinLu": {
+      "id": 1970577,
+      "ph": 6.83,
+      "cod": 21.80,
+      "tp": 0.48,
+      "nh3n": 12.90,
+      "ssll": 112.93,
+      "ljll": 2888642.00,
+      "qyw": 9.62,
+      "hyw": 9.48,
+      "beng1Yx": 0,
+      "beng2Yx": 0,
+      "beng3Yx": 0,
+      "beng3Gz": 0,
+      "beng1Gz": 0,
+      "beng2Gz": 0,
+      "ccYx": 0,
+      "ccGz": 0,
+      "gsYx": 0,
+      "gsGz": 0,
+      "inserttime": "2026-07-02 13:10:00"
+    },
+    "shangTa": {
+      "stJsphS": 0,
+      "stJsadS": 0,
+      "stJscodS": 0,
+      "stJszdS": 0,
+      "stJszlS": 0,
+      "stCsphS": 0,
+      "stCscodS": 0,
+      "stCszdS": 0,
+      "stCszlS": 0,
+      "stCsadS": 0,
+      "stJseqssllS": 0,
+      "stJsyqssllS": 0,
+      "stJsyqljllS": 0,
+      "stCsssllS": 0,
+      "stCsljllS": 0,
+      "inserttime": "2026-07-02 13:10:00",
+      "sszgycsJscod": 205.41,
+      "sybEqjsljll": 6546381.0,
+      "sszgycsJsnh3n": 3.44,
+      "sszgycsJsph": 6.86,
+      "sszgycsJstn": 2.79,
+      "sszgycsJstp": 0.23,
+      "sszgycsCscod": 6.91,
+      "sszgycsCstn": 0.96,
+      "sszgycsCsnh3n": 0.009,
+      "sybCsLjll": 14275670.00,
+      "sybCsssll": 221.37,
+      "sszgycsCsph": 6.91,
+      "sybYqjsljll": 9518417.0,
+      "sszgycsCstp": 0.030,
+      "sqsb1Gz": null,
+      "slcfj1Yx": null,
+      "sddym2Gz": null,
+      "scgs1Gz": null,
+      "sddfm1Gz": null,
+      "sddfm2Yx": null,
+      "sqsb4Yx": null,
+      "slcfj2Gz ": null,
+      "slcfj1Gz": null,
+      "sxgs2Yx": null,
+      "sxgs2Gz": null,
+      "scgs2Gz": null,
+      "sqsb3Yx
+      ":null,"
+      sxgs1Yx
+      ":null,"
+      sddym1Gz
+      ":null,"
+      sddym1Yx
+      ":null,"
+      sqsb4Gz
+      ":null,"
+      sddym2Yx
+      ":null,"
+      slcfj2Yx
+      ":null,"
+      sxgs1Gz
+      ":null,"
+      sddfm2Gz
+      ":null,"
+      sqsb1Yx
+      ":null,"
+      scgs1Yx
+      ":null,"
+      sqsb2Gz
+      ":null,"
+      sqsb2Yx
+      ":null,"
+      sqsb3Gz
+      ":null,"
+      sddfm1Yx
+      ":null,"
+      scgs2Yx
+      ":null}}}
