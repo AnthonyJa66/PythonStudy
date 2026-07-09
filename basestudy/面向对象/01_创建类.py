@@ -5,6 +5,7 @@ class ATM:
         self.bank=bank,
         self.branch=branch
 
+
 class MoneyPaper:
     def __init__(self,id,value,year):
         self.id=id,
