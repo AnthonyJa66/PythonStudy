@@ -1,6 +1,6 @@
 
 class ATM:
-    def __init__(self,id,bank,branch):#构造函数，用于初始化对象的属性
+    def __init__(self,id,bank,branch):#__init__构造是构造函数，用于初始化对象的属性
         self.id=id,
         self.bank=bank,
         self.branch=branch
