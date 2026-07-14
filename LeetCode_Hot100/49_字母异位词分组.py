@@ -41,7 +41,7 @@ class Solution:
         # m=len(strs)
         groups=defaultdict(list)
         for s in strs:
-            key=''.join(sorted(s))
+            key=''.join(sorted(s))#join函数/方法消除字符串之间存在的符合/空格，使sored方法排序字符串后产生的引号
             print(sorted(s),key)
             groups[key].append(s)
         return list(groups.values())
