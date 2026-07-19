@@ -25,7 +25,7 @@ class ListNode:
 #     print(cur.val)
 #     cur=cur.next
 
-def add_tail(head,val):
+def add_at_tail(head,val):
     new_node=ListNode(val)#将值传给新节点
 
     # 如果链表是空的，新节点就是头节点
@@ -41,14 +41,22 @@ def add_tail(head,val):
 head=ListNode(7)
 # head.next=ListNode(8)
 # head.next.next=ListNode(9)
-h=add_tail(ListNode(11),10)
+h=add_at_tail(ListNode(11),10)
 print(h,h.val,h.next)
 # cur=head
 # while cur:
 #     print(cur.val)
 #     cur=cur.next
 
-
+def reverseList(head):
+    prev = None
+    cur = head
+    while cur:
+        nxt = cur.next   # 保存下一个
+        cur.next = prev  # 反转指向
+        prev = cur       # 移动
+        cur = nxt
+    return prev
 
 
 #
