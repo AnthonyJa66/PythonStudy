@@ -7,7 +7,12 @@ class ListNode:
          self.next = next
 class Solution:
     def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        pre=None
+        cur=head
 
-        while head:
-            pre=head
-            head=head.next
+        while cur:
+            nxt=cur.next
+            cur.next=pre
+            pre=cur
+            cur=nxt
+        return pre
