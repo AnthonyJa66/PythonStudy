@@ -30,4 +30,17 @@ class Solution:
         else:
             left_hight = self.maxDepth(root.left)
             right_hight = self.maxDepth(root.right)
+            print(left_hight, right_hight)
             return max(left_hight, right_hight) + 1
+            # return max(self.maxDepth(root.left),self.maxDepth(root.right))+1
+            # print(left_hight, right_hight)
+
+
+root = TreeNode(1)
+root.left = TreeNode(2)
+root.left.left = TreeNode(3)
+root.left.right = TreeNode(4)
+root.left.right.left = TreeNode(5)
+sol = Solution()
+sol.maxDepth(root)
+print(sol.maxDepth(root))
