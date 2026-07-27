@@ -54,7 +54,7 @@ class Solution:
         #
         # return True
 
-        prev=float('-inf')#创建一个负无穷大的变量，用来对比+记录上一个节点的值
+        prev=float('-inf')#创建一个负无穷大的变量，用来对比最左子树节点的值+记录上一个节点的值
 
         def inorder(node):#中序遍历
 
