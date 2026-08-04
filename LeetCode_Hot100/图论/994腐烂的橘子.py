@@ -32,27 +32,48 @@
 
 
 from typing import List
-
+from collections import deque
 
 class Solution:
     def orangesRotting(self, grid: List[List[int]]) -> int:
         m = len(grid)
         n = len(grid[0])
-        max_time=0
+        fresh=0
 
-        def dfs(i,j):
+        queue=deque()#队列，用于存储腐烂橘子的信息
 
-            if i<0 or i>=m or j<0 or j>=n or grid[i][j]==0:
-                return
-            elif grid[i][j]==1:
-                grid[i][j]=-1
-
-
-
-
+        #统计新鲜橘子的数量和腐烂橘子的信息添加队列
         for i in range(m):
             for j in range(n):
-                if grid[i][j]==2:
-                    dfs(i,j)
-        return -1
+                if grid[i][j]==1:
+                    fresh+=1
+                elif grid[i][j]==2:
+                    queue.append([i,j,0])
+        ans = 0
+        q=[(1,0),(0,1),(-1,0),(0,-1)]
+
+        #bfs广度优先搜索算法
+        while queue:
+            x,y,t=queue.popleft()
+            ans = max(ans, t)
+            for dx,dy in q:
+                nx,ny=x+dx,y+dy
+                if 0<=nx<m and 0<=ny<n and grid[nx][ny]==1:
+                    #如果腐烂橘子相邻的橘子是新鲜的，就腐烂它，并记录腐烂的时间，
+                    # 被腐烂橘子腐烂的橘子再腐烂身边橘子时，
+                    # 会在原有时间+1，popleft确保已经腐烂的橘子先将新鲜的橘子腐烂掉，避免时间统计错误
+                    grid[nx][ny]=2
+                    fresh-=1
+                    queue.append([nx,ny,t+1])
+
+
+        if fresh==0:
+            return ans
+        else:
+            return -1
+
+
+
+
+
 

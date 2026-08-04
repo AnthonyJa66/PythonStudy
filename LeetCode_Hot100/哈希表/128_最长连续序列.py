@@ -29,5 +29,11 @@ class Solution:
         m=len(nums)
         max_len=1
         num=sorted(nums)
-        groups=defaultdict(list)
+        temp=0
+        for i in range(m):
+            if num[i]+1 not in num:
+                temp=num[i+1]
+
+            max_len=max(max_len,temp)
+
 
